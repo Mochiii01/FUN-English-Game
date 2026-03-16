@@ -1,0 +1,112 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  background: linear-gradient(to right, #fce4ec, #e3f2fd);
+  margin: 0;
+  padding: 25px;
+}
+
+/* Make container responsive */
+.container {
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Stage buttons: wrap nicely on small screens */
+#stageSelect button {
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 14px;
+  width: 45%; /* two buttons per row on small screens */
+  box-sizing: border-box;
+}
+
+/* Make letter slots and pool letters wrap properly */
+.letterSlot, .poolLetter {
+  font-size: 20px;
+  min-width: 35px;
+  padding: 8px 12px;
+  margin: 4px;
+}
+
+/* Responsive sentence and game area */
+#gameArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* spacing between letters or words */
+}
+
+/* Feedback text scaling on small screens */
+#feedback {
+  font-size: 24px;
+}
+
+/* Make general text smaller on small screens */
+@media screen and (max-width: 480px) {
+  .sentence {
+    font-size: 18px;
+  }
+  button {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 6px;
+  }
+  .letterSlot, .poolLetter {
+    font-size: 18px;
+    min-width: 30px;
+    padding: 6px 10px;
+  }
+}
+
+.poolLetter {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 16px;
+  background: #f7dbb1;
+  border-radius: 10px;
+  cursor: grab;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#wordMeaning {
+  font-size: 20px;
+  color: #444;
+  margin: 15px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#feedback {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 20px;
+  min-height: 40px;
+  color: #fe0202;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sentence {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sentenceBtn {
+  background: #0c71c5;
+}
+
+.sentenceBtn:hover {
+  background: #0080ff;
+  transform: scale(1.3);
+}
+
+.progress {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}

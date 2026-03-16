@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>English Quiz Game</h1>
+  <p class="subtitle">让我们一起开启趣味的游戏吧!</p>
+
+  <div id="stageSelect" class="card">
+    <h2>选择阶段<br>Choose Stage</h2>
+    <button onclick="selectStage('kindergarten')">幼儿园<br>Kindergarten</button>
+    <button onclick="selectStage('primary')">小学<br>Primary</button>
+    <button onclick="selectStage('middle')">中学<br>Middle</button>
+    <button onclick="selectStage('university')">大学<br>University</button>
+  </div>
+
+  <div id="levelSelect" class="card" style="display:none;"></div>
+  <div id="gameArea" class="card"></div>
+  <div id="feedback"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
